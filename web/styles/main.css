@@ -1,0 +1,79 @@
+/* Đặt toàn bộ nội dung ra giữa màn hình */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0f5;     /* nền hồng nhạt */
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 2.2em;
+    color: #d63384;   /* hồng đậm */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Bảng */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background: white;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .7em 1em;
+}
+
+th {
+    background-color: #ff69b4; /* hồng tươi cho header */
+    color: white;              /* chữ trắng */
+}
+
+.right {
+    text-align: right;
+}
+
+/* Ô nhập số lượng */
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    font-size: 14px;
+    width: 50px;       /* gọn vừa đủ cho số lượng */
+    margin-right: 5px; /* cách nút Update */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style cho các nút */
+input[type="submit"] {
+    background-color: #ff69b4;   /* hồng */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;   /* khoảng cách giữa các nút */
+    display: inline-block;
+}
+
+input[type="submit"]:hover {
+    background-color: #d63384;  /* hồng đậm khi hover */
+}
+
+/* Căn giữa phần nút Continue Shopping + Checkout */
+.form-buttons {
+    margin-top: 1em;
+    text-align: center;
+}
